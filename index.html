@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Fullscreen drag-slider with parallax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/animations.css">
+
+
+        <!-- pointy stuff -->
+        <link rel="stylesheet" href="pointy_css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="pointy_css/style.css"> <!-- Resource style -->
+    <script src="pointy_js/modernizr.js"></script> <!-- Modernizr -->
+
+
+
+
+  </head>
+
+  <header>
+    <div id="banner_descr">
+
+    <!-- <p id="zwl">THE HIGH SCHOOL ENVIRONMENTAL LEADERSHIP PROGRAM</p> -->
+    <img id="lscape_svg" class="slideUp"  src="img/hsss.svg">
+    <img id="port_svg" class="slideUp"  src="img/hs.svg">
+</div>
+
+
+
+<nav>
+    <ul class="cd-primary-nav">
+
+<!-- <div class="para_desc"><p id="zwl_nav">ZERO WASTE LEADERS</p>
+    <p id="zwl_under_nav"><br>A High School Leadership Project</p>
+       </div> -->
+
+       <!-- <div class="middle">
+       </div> -->
+
+
+       <!-- <div id="nav_sep"> -->
+        <!-- <div id="col_left"> -->
+      <li><a href="#0">The team</a></li>
+      <li><a href="board.html">The Board</a></li>
+      <li><a href="#0">Our projects</a></li>
+        <!-- </div> -->
+        <!-- <div id="col_right"> -->
+      <li><a href="#0">Start a project</a></li>
+      <li><a href="#0">Join In</a></li>
+      <li><a href="#0">Create an account</a></li>
+        <!-- </div> -->
+       <!-- </div> -->
+    </ul>
+  </nav>
+  </header>
+
+
+  <body id="home_page">
+
+
+
+<div class="cd-slider-wrapper">
+    <ul class="cd-slider">
+      <li class="is-visible">
+        <div class="cd-half-block image"></div>
+
+        <div class="cd-half-block content">
+          <div>
+            <h2>Pointy Sgglider</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae.
+            </p>
+
+          </div>
+        </div>
+      </li> <!-- .cd-half-block.content -->
+
+      <li>
+        <div class="cd-half-block image"></div>
+
+        <div class="cd-half-block content light-bg">
+          <div>
+            <h2>Slide Number 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae.
+            </p>
+          </div>
+        </div> <!-- .cd-half-block.content -->
+      </li>
+
+      <li>
+        <div class="cd-half-block image"></div>
+
+        <div class="cd-half-block content">
+          <div>
+            <h2>Slide Number 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur abd.
+            </p>
+          </div>
+        </div> <!-- .cd-half-block.content -->
+      </li>
+
+      <li>
+        <div class="cd-half-block image"></div>
+
+        <div class="cd-half-block content">
+          <div>
+            <h2>Slide Number 4</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit.
+            </p>
+          </div>
+        </div> <!-- .cd-half-block.content -->
+      </li>
+
+
+
+<li>
+        <div class="cd-half-block image"></div>
+
+        <div class="cd-half-block content">
+          <div>
+            <h2>Slide Number <5/h2>
+            <p>
+              Yada  psum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit.
+            </p>
+          </div>
+        </div> <!-- .cd-half-block.content -->
+      </li>
+
+
+
+
+
+    </ul> <!-- .cd-slider -->
+  </div> <!-- .cd-slider-wrapper -->
+
+
+
+
+
+
+
+
+
+   <!-- for rounded animated nav -->
+<div class="cd-overlay-nav">
+    <span></span>
+  </div> <!-- cd-overlay-nav -->
+
+  <div class="cd-overlay-content">
+    <span></span>
+  </div> <!-- cd-overlay-content -->
+  <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+
+
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+
+
+
+<!-- pointy stuff -->
+<script src="pointy_js/jquery-2.1.4.js"></script>
+<script src="pointy_js/jquery.mobile.custom.min.js"></script>
+ <script src="pointy_js/main.js"></script>
+
+
+<!-- rounded animated nav -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+
+<script>
+  $(window).scroll(function() {
+    $('#lscape_svg').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("slideUp");
+      }
+    });
+
+   $('#port_svg').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("slideUp");
+      }
+    });
+
+
+
+  });
+</script>
+
+  </body>
+</html>
